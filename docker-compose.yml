@@ -1,0 +1,11 @@
+version: '3'
+
+
+services:
+       
+  laravel:
+      image: alephp/php56oci
+      ports:
+        - 8888:80
+      volumes:
+        - $PWD:/var/www/public

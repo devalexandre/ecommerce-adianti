@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+ <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Desenvolvimento web, desenvolvimento ecommerce, programador poços de caldas">
+        <meta name="author" content="Indev Desenvolvimento">
+
+        <title>Indev Desenvolvimento</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Application custom CSS -->
+ <link href="app/templates/{template}/bower_components/bulma/css/bulma.css?appver=400" rel="stylesheet" type="text/css" media="screen">
+
+    </head>
+    <body >
+
+<!-- navbar -->
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item">
+        <img src="app/templates/theme3/indev/logo.png" alt="indev logo">
+      </a>
+      <a class="nav-item is-tab is-hidden-mobile " href="index.php?class=Home&method=destaque">Home</a>
+      <a class="nav-item is-tab is-hidden-mobile" href="index.php?class=Home&method=onReload">Produtos</a>
+      <a class="nav-item is-tab is-hidden-mobile" href="#">Sobre Nós</a>
+      <a class="nav-item is-tab is-hidden-mobile" href="#">Contato</a>
+    </div>
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="nav-right nav-menu">
+      <a class="nav-item is-tab is-hidden-tablet is-active">Home</a>
+      <a class="nav-item is-tab is-hidden-tablet">Produtos</a>
+      <a class="nav-item is-tab is-hidden-tablet">Sobre Nós</a>
+      <a class="nav-item is-tab is-hidden-tablet">Contato</a>
+      <a class="nav-item is-tab" href="index.php?class=Home&method=login">
+        <span class="icon">
+          <i class="fa fa-home"></i>
+        </span>
+        Login
+      </a>
+      <a class="nav-item is-tab" href="index.php?class=Home&method=logout">Sair</a>
+       <a class="nav-item is-tab" href="index.php?class=Home&method=meuCarrinho">
+      <span class="icon">
+      <i class="fa fa-cart-plus" aria-hidden="true"></i>   </span>{cart}
+       
+    
+       </a>
+    </div>
+  </div>
+</nav>
+<!-- fim navbar -->
+  <section class="section  is-medium">
+            <div id="adianti_div_content"></div>
+            <div id="adianti_online_content"></div>
+            <div id="adianti_online_content2"></div>
+
+    </section>
+    
+ 
+    
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Adianti E-commerce</strong> by <a href="http://jgthms.com">Indev Desenvolvimento</a>
+   
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/ale-php/pwd">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Third part libraries required by Adianti Framework -->
+    <script src="lib/jquery/jquery.min.js?afver=400" type="text/javascript"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js?afver=400"></script>
+    <script src="lib/bootstrap/js/bootstrap-plugins.min.js?afver=400" type="text/javascript"></script>
+    <script src="lib/bootstrap/js/locales/bootstrap-datepicker.pt.js?afver=400" type="text/javascript"></script>
+    <script src="lib/jquery/jquery-ui.min.js?afver=400" type="text/javascript"></script>
+    <script src="lib/jquery/jquery-plugins.min.js?afver=400" type="text/javascript"></script>
+
+    <!-- Adianti Framework core and components -->
+    <script src="lib/adianti/include/adianti.min.js?afver=400" type="text/javascript"></script>
+    <script src="lib/adianti/include/components.min.js?afver=400" type="text/javascript"></script>
+    <script src="app/templates/theme3/js/ecommerce.js?afver=400" type="text/javascript"></script>
+
+
+
+
+    </body>
+</html>

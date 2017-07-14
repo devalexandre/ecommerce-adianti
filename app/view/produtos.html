@@ -1,0 +1,52 @@
+<!--[main]-->
+
+  <section class="section">
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Produtos em Destaque</h1>
+        <h2 class="subtitle">
+        Ultimos Laçamentos
+        </h2>
+      </div>
+    </div>
+  </section>
+   <section class="section">
+  <div class="columns">
+    <!--[products]-->
+   
+   <div class="column is-3"> 
+  <div class="card">
+  <div class="card-image">
+    <figure class="image  is-4by3" >
+      <img src="tmp/{$imagem}" alt="Image">    
+    </figure>
+  </div>
+  <div class="card-content">
+<hr>
+ {$name}
+
+    <div class="content">
+  
+      <br>
+    <div class="field is-grouped">
+  <p class="control">
+    <a href="index.php?class=Home&method=additem&key={$id}"class="button is-primary">
+      Comprar
+    </a>
+  </p>
+  <p class="control">
+    <a class="button" disabled>
+      R$ {$price}
+    </a>
+  </p>
+
+</div>
+    </div>
+  </div>
+</div>
+ </div>   
+    
+    <!--[/products]-->
+</div> 
+  </section>
+<!--[/main]-->

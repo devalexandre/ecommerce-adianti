@@ -1,0 +1,54 @@
+<!--[main]-->
+
+  <section class="section">
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Meu Carrinho</h1>
+        <h2 class="subtitle">
+        Produtos , no meu carrinho 
+        </h2>
+      </div>
+    </div>
+  </section>
+   <section class="section">
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th><abbr title="Played">Nome</abbr></th>
+      <th><abbr title="Won">Quantidade</abbr></th>
+      <th><abbr title="Won">Preço</abbr></th>
+      <th><abbr title="Won"></abbr></th>
+   
+
+    </tr>
+  </thead>
+  <tbody>
+       <!--[products]-->
+    <tr>
+      <th>{$id}</th>
+      <td>{$name}</td>
+      <td>{$qty}</td>
+      <td>{$price}</td>
+      <td><a href="index.php?class=Home&method=removeItem&key={$id}" class="button is-danger"><span class="icon">
+  <i class="fa fa-trash "></i>
+</span></a></td>
+    
+  </tr>
+      <!--[/products]-->
+      <!--[total]-->
+       <tr>
+           <th><a href="index.php?class=Home&method=finalizar" class="button is-success">Fechar Pedido</a></th>
+      <th><button class="button is-info">Total R$ {$total_itens} </button></th>
+      
+      </tr>
+      <!--[/total]-->
+  </tbody>
+</table>
+
+
+  </section>
+<!--[/main]-->

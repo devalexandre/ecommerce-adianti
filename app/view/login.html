@@ -1,0 +1,50 @@
+<!--[main]-->
+<form  enctype="multipart/form-data" id="login" name='login' class="container column is-one-third">
+  <div class="field">
+    <p class="control has-icons-left">
+      <input class="input" type="email" placeholder="Email" id="email">
+      <span class="icon is-small is-left">
+      <i class="fa fa-envelope"></i>
+    </span>
+    </p>
+  </div>
+  <div class="field">
+    <p class="control has-icons-left">
+      <input class="input" type="password" placeholder="Password" id="password">
+      <span class="icon is-small is-left">
+      <i class="fa fa-lock"></i>
+    </span>
+    </p>
+  </div>
+  <div class="field">
+    <p class="control">
+      <button class="button is-success" id="logar">
+      Login
+    </button>
+
+</span></a>
+    </p>
+  </div>
+</form>
+
+<script>
+  $().ready(function () {
+
+$('#logar').click(function(ev){
+
+  ev.preventDefault();
+var email = $('#email').val();
+var password = $('#password').val();
+
+__adianti_load_page('index.php?class=ClienteLogin&method=autenticar&email='+email+'&password='+password);
+
+ 
+
+})
+ 
+
+  })
+
+</script>
+
+<!--[/main]-->
