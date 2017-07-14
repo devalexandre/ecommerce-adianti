@@ -21,6 +21,9 @@
       <button class="button is-success" id="logar">
       Login
     </button>
+          <a class="button is-info" href="index.php?class=Home&method=cadastrar" id="logar">
+      Cadastrar
+    </a>
 
 </span></a>
     </p>
@@ -36,7 +39,7 @@ $('#logar').click(function(ev){
 var email = $('#email').val();
 var password = $('#password').val();
 
-__adianti_load_page('index.php?class=ClienteLogin&method=autenticar&email='+email+'&password='+password);
+__adianti_load_page('index.php?class=ClienteLoginForm&method=autenticar&email='+email+'&password='+password);
 
  
 
