@@ -70,18 +70,16 @@ TSession::setValue('cart',array());
 TSession::setValue('cart',$this->cart);
  }
  
-public static function getTotal(){
+ public function getTotal(){
+	 $total = 0;
 
-$total = 0;
+	 foreach (PCart::getItens() as $itens ) {
+		
+    $total = $itens->getPreco() * $itens->getQtd();
+	 }
 
-foreach(PCart::getItens() as $item){
-
-  $total += $item->getPreco();
-}
-
-return $total;
-
-}
+   return $total;
+ }
  
  }// fim class
 

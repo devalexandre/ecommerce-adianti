@@ -238,9 +238,9 @@ class Home extends TPage
             TTransaction::close();
 
             parent::add($this->html);
-        } catch (Exception $e) {
-            var_dump($e);
-            exit;
+        } catch (\Exception $e) {
+            
+           echo $e->getMessage();
         }
     }
 
